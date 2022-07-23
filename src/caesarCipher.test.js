@@ -19,3 +19,7 @@ test('user cipher on alphanumeric string', () => {
 test('use cipher on multi-word string', () => {
     expect(caesarCipher('Hi there')).toBe('Kl wkhuh');
 });
+
+test('user cipher with punctuation', () => {
+    expect(caesarCipher('Hi! hi there.')).toBe('Kl! kl wkhuh.');
+})
